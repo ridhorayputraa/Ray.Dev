@@ -62,7 +62,7 @@ flex md:flex-row flex-col  mx-auto text-center justify-between content-center
               </div>
 
               <div>
-                <p className="font-extrabold text-transparent mt-1 mb-1 md:mb-3 md:mt-1 text-lg md:text-3xl font-bold md:text-3xl bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+                <p className="font-extrabold text-transparent mt-1 mb-1 md:mb-3 md:mt-1 text-lg   md:text-3xl bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
                   {Text[0].subHeading}
                 </p>
               </div>
