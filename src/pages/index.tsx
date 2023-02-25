@@ -91,7 +91,7 @@ flex md:flex-row flex-col  mx-auto text-center justify-between content-center
           {/* cek window if width == mobile maka berikan 5 card */}
 
           <section className="Tech Stack sm:py-32 ">
-            <h1 className="mb-32">Tech Stack</h1> 
+            <p className="mb-32 div font-bold text-3xl mt-6 md:mt-0 md:text-5xl">Tech Stack</p> 
             <Tech mobile={height} />
           </section>
 
