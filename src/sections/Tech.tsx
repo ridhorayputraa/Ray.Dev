@@ -2,7 +2,13 @@ import React from "react";
 import { motion } from "framer-motion";
 import Card from "@/components/Card";
 
-export default function Tech({ mobile }) {
+type cardProps = {
+customClass:object
+// 'small': 'px-16 py-12';
+mobile:number;
+}
+
+export default function Tech({ mobile }:cardProps) {
   return (
     <div
       className={
@@ -20,7 +26,7 @@ export default function Tech({ mobile }) {
           {/* cek window if width == mobile maka berikan 5 card */}
 
           <div className="flex flex-col sm:mb-0 mb-5  justify-center">
-            <Card customClass={small} mobile={true} >1</Card>
+            <Card customClass={'small'}  mobile={true} >1</Card>
           </div>
           <div className="flex flex-col justify-center">
             <motion.button whileHover={{ scale: 1.1 }}>
