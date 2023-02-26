@@ -7,16 +7,22 @@ import "@/styles/nprogress.css";
 import { AnimatePresence, domAnimation, LazyMotion, m } from "framer-motion";
 import { variants } from "animations/variants";
 
+import { useEffect } from "react";
 Router.events.on("routeChangeStart", () => NProgress.start());
 Router.events.on("routeChangeComplete", () => NProgress.done());
 Router.events.on("routeChangeError", () => NProgress.done());
 
+export default function App({ router, Component, pageProps }: any) {
 
-export default function App({ router, Component, pageProps }:any) {
+
   return (
     <ThemeProvider enableSystem={true} attribute="class">
       <LazyMotion features={domAnimation}>
-        <div style={{ overflowX: 'hidden' }}  className="min-h-screen   flex flex-col h-full">
+        <div
+
+          style={{ overflowX: "hidden" }}
+          className="min-h-screen   flex flex-col h-full"
+        >
           <div className="">
             <Header />
             <div className="px-0 xl:px-60 2xl:px-60 sm:px-10 md:px-10 ">

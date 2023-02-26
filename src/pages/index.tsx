@@ -11,7 +11,9 @@ import {Section} from '../components/Container'
 import  Text from "@/pages/data/Text";
 import Layout from "@/sections/Layout";
 import Footer from "@/sections/Footer";
-import Tech from "@/components/Tech";
+import Tech from "@/sections/Tech";
+
+// import luxy from "luxy.js";
 
 const Canvas = forwardRef((props, ref) => (
   // @ts-ignore
@@ -24,6 +26,17 @@ export default function Home() {
   const canvasRef = useRef(null);
   const [height, setHeight] = useState(0);
 
+//   const init = () => {
+//   luxy.init()
+//   luxy.settings.wrapperSpeed = 0.02;
+// };
+
+const isBrowser = () => typeof window !== 'undefined';
+// useEffect(() => {
+// if(isBrowser()){
+//  return init()
+// }
+// }, [])
   useEffect(() => {
     setHeight(window.innerWidth);
   }, [height]);
@@ -56,7 +69,7 @@ flex md:flex-row flex-col  mx-auto text-center justify-between content-center
           strokeWidth={5}
           strokeColor={color}
         />
-        <div className="flex h-full flex-col">
+        <div id="luxy" className="flex h-full flex-col">
           <div className="layout h-full py-32 mb-10  layout   flex-1 h-flex-col-reverse items-center  justify-center leading-6 md:flex-row  body-font font-poppins  flex-col  flex sm:flex-col-reverse text-center justify-center flex-col-reverse items-center  justify-between h-screen  sm:flex-col      leading-6 md:flex-row">
             <div className="w-4/5 text-center  content-center align-middle justify-center md:text-left ">
               <div className="div font-bold text-3xl mt-6 md:mt-0 md:text-5xl">
@@ -94,7 +107,7 @@ flex md:flex-row flex-col  mx-auto text-center justify-between content-center
             <HeaderMarquee>RIdho ganetng-ganteng-ganteng</HeaderMarquee>
         </Section> */}
 
-          <section className="Tech Stack sm:py-32 ">
+          <section className="Tech Stack sm:py-32">
             <p className="mb-32 div font-bold text-3xl mt-6 md:mt-0 md:text-5xl">Tech Stack</p> 
             <Tech mobile={height} />
           </section>

@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Card from "@/components/Card";
 
 export default function Tech({ mobile }) {
   return (
@@ -19,16 +20,7 @@ export default function Tech({ mobile }) {
           {/* cek window if width == mobile maka berikan 5 card */}
 
           <div className="flex flex-col sm:mb-0 mb-5  justify-center">
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              transition={{ ease: 'easeInOut', duration: 0.5 }}
-              viewport={{ once: true }}
-            >
-              <motion.button whileHover={{ scale: 1.1 }}>
-                <p className="px-16 py-8 bg-red-800">1</p>
-              </motion.button>
-            </motion.div>
+            <Card customClass={small} mobile={true} >1</Card>
           </div>
           <div className="flex flex-col justify-center">
             <motion.button whileHover={{ scale: 1.1 }}>
