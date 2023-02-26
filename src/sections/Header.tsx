@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 import clsx from "clsx";
 
 const Header = () => {
-  const [mounted, setMounted] = useState<boolean>(false);
+  const [mounted, setMounted] = useState(false)
 
   const { systemTheme, theme, setTheme } = useTheme();
 

@@ -1,4 +1,4 @@
-import "@/styles/globals.css";
+import "../styles/globals.css";
 import { ThemeProvider } from "next-themes";
 import Header from "@/sections/Header";
 import { Router } from "next/router";
@@ -16,7 +16,7 @@ export default function App({ router, Component, pageProps }:any) {
   return (
     <ThemeProvider enableSystem={true} attribute="class">
       <LazyMotion features={domAnimation}>
-        <div className="min-h-screen   flex flex-col h-full">
+        <div style={{ overflowX: 'hidden' }}  className="min-h-screen   flex flex-col h-full">
           <div className="">
             <Header />
             <div className="px-0 xl:px-60 2xl:px-60 sm:px-10 md:px-10 ">

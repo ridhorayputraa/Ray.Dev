@@ -22,6 +22,7 @@ export default function Tech({ mobile }) {
             <motion.div
               initial="hidden"
               whileInView="visible"
+              transition={{ ease: 'easeInOut', duration: 0.5 }}
               viewport={{ once: true }}
             >
               <motion.button whileHover={{ scale: 1.1 }}>
