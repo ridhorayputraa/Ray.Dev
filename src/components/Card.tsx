@@ -18,7 +18,7 @@ export default function Card({ children, customClass, mobile }: cardProps) {
         
         bg-red-800`}>{children}</p>
       ) : (
-        <p className={`px-16 py-8 mb-10 dark:bg-zinc-800 bg-slate-500 shadow-2xl`}>{children}</p>
+        <p className={`px-16 py-8 mb-10 dark:bg-zinc-800 bg-slate-200 shadow-2xl`}>{children}</p>
       )}
     </motion.button>
   );

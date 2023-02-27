@@ -45,7 +45,7 @@ const Header = () => {
     <header
       className={clsx(
         "sticky h-16 inset-0   z-50 ",
-        "bg-zinc-50 dark:bg-zinc-900 "
+        "bg-gray-200 dark:bg-zinc-900 "
       )}
     >
       <div className="layout  h-full  flex items-center justify-between">

@@ -52,11 +52,11 @@ font-family: 'Poppins', sans-serif;
 
 @layer base {
   body {
-    @apply bg-gray-50  text-gray-700 dark:bg-zinc-900 dark:text-gray-300;
+    @apply bg-gray-200  text-gray-700 dark:bg-zinc-900 dark:text-gray-300;
     @apply min-h-screen;
   }
 h1{
-  @apply bg-gray-50  text-gray-700 dark:bg-zinc-900 dark:text-gray-300
+  @apply bg-gray-200  text-gray-700 dark:bg-zinc-900 dark:text-gray-300
   /* text-gray-300 */
 }
 
@@ -67,7 +67,7 @@ h1{
 
 @media (max-width: 640px) {
 .active {
-    @apply bg-gray-50  text-gray-900 dark:bg-zinc-900 dark:text-gray-300;
+    @apply bg-gray-200  text-gray-900 dark:bg-zinc-900 dark:text-gray-300;
   }
 
   
@@ -76,7 +76,7 @@ h1{
 
   
   .nav-links-mobile {
-    @apply bg-gray-50 text-gray-900 dark:bg-zinc-900 dark:text-gray-300;
+    @apply bg-gray-200 text-gray-900 dark:bg-zinc-900 dark:text-gray-300;
   }
 
   ::selection {
