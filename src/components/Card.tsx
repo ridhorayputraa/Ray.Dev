@@ -23,7 +23,7 @@ export default function Card({ children, customClass, mobile }: cardProps) {
         </p>
       ) : (
         <p
-          className={`px-12 py-6 mb-10 dark:bg-zinc-800 bg-slate-200 shadow-2xl`}
+          className={`px-14 py-7 mb-10  rounded-lg flex justify-center dark:bg-zinc-800 bg-slate-200 shadow-2xl`}
         >
           {children}
         </p>

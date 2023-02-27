@@ -26,40 +26,67 @@ export default function Tech({ mobile }: cardProps) {
           {/* cek window if width == mobile maka berikan 5 card */}
 
           <div className="flex flex-col sm:mb-0 mb-5  justify-center">
-            <Card>1</Card>
+            <Card>
+              <img
+                style={{ opacity: 0.8 }}
+                width="50px"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"
+              />
+            </Card>
             {/* <Card customClass='small'  mobile={true} >1</Card> */}
             {/* contoh untuk yang mobile */}
           </div>
           <div className="flex flex-col justify-center">
-            <Card>1</Card>
+            <Card>
+              <img
+                style={{ opacity: 0.8 }}
+                width="50px"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg"
+              />
+            </Card>
             <Card>2</Card>
           </div>
           <div className="flex flex-col justify-center">
             <Card>
               <img
+                style={{ opacity: 0.8 }}
                 width="50px"
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
               />
             </Card>
             <Card>
               <img
+                style={{ opacity: 0.8 }}
                 width="50px"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-line.svg"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
               />
             </Card>
             <Card>
               <img
+                style={{ opacity: 0.8 }}
                 width="50px"
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-line.svg"
               />
             </Card>
           </div>
           <div className="flex flex-col justify-center">
-            <Card>1</Card>
+            <Card>
+              <img
+                style={{ opacity: 0.8 }}
+                width="50px"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+              />
+            </Card>
             <Card>2</Card>
           </div>
           <div className="flex flex-col justify-center">
-            <Card>1</Card>
+            <Card>
+              <img
+                style={{ opacity: 0.8 }}
+                width="50px"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+              />
+            </Card>
           </div>
         </>
       )}
