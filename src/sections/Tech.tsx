@@ -44,7 +44,13 @@ export default function Tech({ mobile }: cardProps) {
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg"
               />
             </Card>
-            <Card>2</Card>
+            <Card>
+              <img
+                style={{ opacity: 0.8 }}
+                width="50px"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+              />
+            </Card>
           </div>
           <div className="flex flex-col justify-center">
             <Card>
@@ -65,7 +71,7 @@ export default function Tech({ mobile }: cardProps) {
               <img
                 style={{ opacity: 0.8 }}
                 width="50px"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-line.svg"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
               />
             </Card>
           </div>
@@ -77,7 +83,13 @@ export default function Tech({ mobile }: cardProps) {
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
               />
             </Card>
-            <Card>2</Card>
+            <Card>
+              <img
+                style={{ opacity: 0.8 }}
+                width="50px"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
+              />
+            </Card>
           </div>
           <div className="flex flex-col justify-center">
             <Card>
