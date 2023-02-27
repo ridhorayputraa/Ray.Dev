@@ -11,12 +11,16 @@
   height: 5px;
 }
 ::-webkit-scrollbar-thumb{
+  /* #6366f1
+  #a855f7
+   #ec4899 */
  @apply bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500;
-  height: 5px;
+ height: 5px;
   width: 5px;
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 2px;
 }
+
 
 
 /* Endof */

@@ -11,7 +11,7 @@ import {Section} from '../components/Container'
 import  Text from "@/pages/data/Text";
 import Layout from "@/sections/Layout";
 import Footer from "@/sections/Footer";
-import Tech from "@/sections/Tech";
+import Tech from "../sections/Tech";
 
 // import luxy from "luxy.js";
 
