@@ -35,9 +35,24 @@ export default function Tech({ mobile }: cardProps) {
             <Card>2</Card>
           </div>
           <div className="flex flex-col justify-center">
-            <Card>1</Card>
-            <Card>2</Card>
-            <Card>3</Card>
+            <Card>
+              <img
+                width="50px"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+              />
+            </Card>
+            <Card>
+              <img
+                width="50px"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-line.svg"
+              />
+            </Card>
+            <Card>
+              <img
+                width="50px"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-line.svg"
+              />
+            </Card>
           </div>
           <div className="flex flex-col justify-center">
             <Card>1</Card>
