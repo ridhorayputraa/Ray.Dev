@@ -29,6 +29,7 @@ export default function Tech({ mobile }: cardProps) {
             <Card>
               <a target="_blank" href="https://getbootstrap.com/">
                 <img
+                  alt="Bootsrap"
                   style={{ opacity: 0.8 }}
                   width="50px"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"
@@ -62,51 +63,69 @@ export default function Tech({ mobile }: cardProps) {
           </div>
           <div className="flex flex-col justify-center">
             <Card>
-              <img
-                style={{ opacity: 0.8 }}
-                width="50px"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
-              />
+              <a target="_blank" href="https://nextjs.org/">
+                <img
+                  alt="NextJs"
+                  style={{ opacity: 0.8 }}
+                  width="50px"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+                />
+              </a>
             </Card>
             <Card>
-              <img
-                style={{ opacity: 0.8 }}
-                width="50px"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
-              />
+              <a target="_blank" href="https://www.mysql.com/">
+                <img
+                  alt="Mysql"
+                  style={{ opacity: 0.8 }}
+                  width="50px"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
+                />
+              </a>
             </Card>
             <Card>
-              <img
-                style={{ opacity: 0.8 }}
-                width="50px"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
-              />
+              <a target="_blank" href="https://firebase.google.com/?hl=id">
+                <img
+                  alt="Firebase"
+                  style={{ opacity: 0.8 }}
+                  width="50px"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+                />
+              </a>
             </Card>
           </div>
           <div className="flex flex-col justify-center">
             <Card>
-              <img
-                style={{ opacity: 0.8 }}
-                width="50px"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-              />
+              <a href="https://reactjs.org/" target="_blank">
+                <img
+                  alt="ReactJs"
+                  style={{ opacity: 0.8 }}
+                  width="50px"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                />
+              </a>
             </Card>
             <Card>
-              <img
-                style={{ opacity: 0.8 }}
-                width="50px"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
-              />
+              <a target="_blank" href="https://redux.js.org/">
+                <img
+                  alt="Redux"
+                  style={{ opacity: 0.8 }}
+                  width="50px"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
+                />
+              </a>
             </Card>
           </div>
           <div className="flex flex-col justify-center">
-            <Card>
-              <img
-                style={{ opacity: 0.8 }}
-                width="50px"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
-              />
-            </Card>
+            <a target="_blank" href="https://tailwindcss.com/">
+              <Card>
+                <img
+                  alt="Tailwindcss"
+                  style={{ opacity: 0.8 }}
+                  width="50px"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+                />
+              </Card>
+            </a>
           </div>
         </>
       )}
