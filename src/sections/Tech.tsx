@@ -25,7 +25,7 @@ export default function Tech({ mobile }: cardProps) {
                 <img
                   alt="Tailwindcss"
                   style={{ opacity: 0.8 }}
-                  width="50px"
+                  width="30px"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
                 />
               </a>
@@ -33,12 +33,12 @@ export default function Tech({ mobile }: cardProps) {
           </div>
           <div className="">
             <Card customClass={"px-16 py-4"} mobile={true}>
-              <a target="_blank" href="https://tailwindcss.com/">
+              <a target="_blank" href="https://laravel.com/">
                 <img
-                  alt="Tailwindcss"
+                  alt="Laravel"
                   style={{ opacity: 0.8 }}
-                  width="50px"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+                  width="30px"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg"
                 />
               </a>
               {/* // ${customClass === "small" ? "px-16 py-6" : ""}
@@ -48,36 +48,36 @@ export default function Tech({ mobile }: cardProps) {
           </div>
           <div className="">
             <Card customClass={"px-24 py-6"} mobile={true}>
-              <a target="_blank" href="https://tailwindcss.com/">
+              <a target="_blank" href="https://nextjs.org/">
                 <img
-                  alt="Tailwindcss"
+                  alt="NextJs"
                   style={{ opacity: 0.8 }}
-                  width="50px"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+                  width="40px"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
                 />
               </a>
             </Card>
           </div>
           <div className="">
             <Card customClass={"px-16 py-4"} mobile={true}>
-              <a target="_blank" href="https://tailwindcss.com/">
+              <a target="_blank" href="https://reactjs.org/">
                 <img
-                  alt="Tailwindcss"
+                  alt="React"
                   style={{ opacity: 0.8 }}
-                  width="50px"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+                  width="30px"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
                 />
               </a>
             </Card>
           </div>
           <div className="">
             <Card customClass={"px-8 py-2"} mobile={true}>
-              <a target="_blank" href="https://tailwindcss.com/">
+              <a target="_blank" href="https://www.mysql.com/">
                 <img
-                  alt="Tailwindcss"
+                  alt="Mysql"
                   style={{ opacity: 0.8 }}
-                  width="50px"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+                  width="30px"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
                 />
               </a>
             </Card>
