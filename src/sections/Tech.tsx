@@ -19,7 +19,56 @@ export default function Tech({ mobile }: cardProps) {
     >
       {mobile <= 966 ? (
         <div className="flex flex-col sm:mb-0 mb-5  justify-center">
-          <h1>Mobile</h1>
+          <Card customClass={"small"} mobile={true}>
+            <a target="_blank" href="https://tailwindcss.com/">
+              <img
+                alt="Tailwindcss"
+                style={{ opacity: 0.8 }}
+                width="50px"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+              />
+            </a>
+          </Card>
+          <Card>
+            <a target="_blank" href="https://tailwindcss.com/">
+              <img
+                alt="Tailwindcss"
+                style={{ opacity: 0.8 }}
+                width="50px"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+              />
+            </a>
+          </Card>
+          <Card>
+            <a target="_blank" href="https://tailwindcss.com/">
+              <img
+                alt="Tailwindcss"
+                style={{ opacity: 0.8 }}
+                width="50px"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+              />
+            </a>
+          </Card>
+          <Card>
+            <a target="_blank" href="https://tailwindcss.com/">
+              <img
+                alt="Tailwindcss"
+                style={{ opacity: 0.8 }}
+                width="50px"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+              />
+            </a>
+          </Card>
+          <Card>
+            <a target="_blank" href="https://tailwindcss.com/">
+              <img
+                alt="Tailwindcss"
+                style={{ opacity: 0.8 }}
+                width="50px"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+              />
+            </a>
+          </Card>
         </div>
       ) : (
         <>
@@ -116,16 +165,16 @@ export default function Tech({ mobile }: cardProps) {
             </Card>
           </div>
           <div className="flex flex-col justify-center">
-            <a target="_blank" href="https://tailwindcss.com/">
-              <Card>
+            <Card>
+              <a target="_blank" href="https://tailwindcss.com/">
                 <img
                   alt="Tailwindcss"
                   style={{ opacity: 0.8 }}
                   width="50px"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
                 />
-              </Card>
-            </a>
+              </a>
+            </Card>
           </div>
         </>
       )}
