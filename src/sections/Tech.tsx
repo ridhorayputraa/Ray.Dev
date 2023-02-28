@@ -13,62 +13,75 @@ export default function Tech({ mobile }: cardProps) {
     <div
       className={
         mobile <= 996
-          ? "flex container mx-auto flex-col justify-center  h-full sm:flex-row"
+          ? ""
           : " flex container mx-auto flex-col justify-between sm:justify-between md:justify-between  h-full sm:flex-row "
       }
     >
       {mobile <= 966 ? (
-        <div className="flex flex-col sm:mb-0 mb-5  justify-center">
-          <Card customClass={"small"} mobile={true}>
-            <a target="_blank" href="https://tailwindcss.com/">
-              <img
-                alt="Tailwindcss"
-                style={{ opacity: 0.8 }}
-                width="50px"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
-              />
-            </a>
-          </Card>
-          <Card>
-            <a target="_blank" href="https://tailwindcss.com/">
-              <img
-                alt="Tailwindcss"
-                style={{ opacity: 0.8 }}
-                width="50px"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
-              />
-            </a>
-          </Card>
-          <Card>
-            <a target="_blank" href="https://tailwindcss.com/">
-              <img
-                alt="Tailwindcss"
-                style={{ opacity: 0.8 }}
-                width="50px"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
-              />
-            </a>
-          </Card>
-          <Card>
-            <a target="_blank" href="https://tailwindcss.com/">
-              <img
-                alt="Tailwindcss"
-                style={{ opacity: 0.8 }}
-                width="50px"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
-              />
-            </a>
-          </Card>
-          <Card>
-            <a target="_blank" href="https://tailwindcss.com/">
-              <img
-                alt="Tailwindcss"
-                style={{ opacity: 0.8 }}
-                width="50px"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
-              />
-            </a>
-          </Card>
+        <div className="flex flex-col  sm:mb-0 mb-5 ">
+          <div>
+            <Card customClass={"px-8 py-2"} mobile={true}>
+              <a target="_blank" href="https://tailwindcss.com/">
+                <img
+                  alt="Tailwindcss"
+                  style={{ opacity: 0.8 }}
+                  width="50px"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+                />
+              </a>
+            </Card>
+          </div>
+          <div className="">
+            <Card customClass={"px-16 py-4"} mobile={true}>
+              <a target="_blank" href="https://tailwindcss.com/">
+                <img
+                  alt="Tailwindcss"
+                  style={{ opacity: 0.8 }}
+                  width="50px"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+                />
+              </a>
+              {/* // ${customClass === "small" ? "px-16 py-6" : ""}
+        // ${customClass === "medium" ? "px-20 py-8" : ""}
+      // ${customClass === "large" ? "px-24 py-10" : ""} */}
+            </Card>
+          </div>
+          <div className="">
+            <Card customClass={"px-24 py-6"} mobile={true}>
+              <a target="_blank" href="https://tailwindcss.com/">
+                <img
+                  alt="Tailwindcss"
+                  style={{ opacity: 0.8 }}
+                  width="50px"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+                />
+              </a>
+            </Card>
+          </div>
+          <div className="">
+            <Card customClass={"px-16 py-4"} mobile={true}>
+              <a target="_blank" href="https://tailwindcss.com/">
+                <img
+                  alt="Tailwindcss"
+                  style={{ opacity: 0.8 }}
+                  width="50px"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+                />
+              </a>
+            </Card>
+          </div>
+          <div className="">
+            <Card customClass={"px-8 py-2"} mobile={true}>
+              <a target="_blank" href="https://tailwindcss.com/">
+                <img
+                  alt="Tailwindcss"
+                  style={{ opacity: 0.8 }}
+                  width="50px"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+                />
+              </a>
+            </Card>
+          </div>
         </div>
       ) : (
         <>
