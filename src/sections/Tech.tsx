@@ -76,7 +76,7 @@ export default function Tech({ mobile }: cardProps) {
                 <img
                   alt="Mysql"
                   style={{ opacity: 0.8 }}
-                  width="30px"
+                  width="40px"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
                 />
               </a>
