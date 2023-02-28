@@ -27,29 +27,37 @@ export default function Tech({ mobile }: cardProps) {
 
           <div className="flex flex-col sm:mb-0 mb-5  justify-center">
             <Card>
-              <img
-                style={{ opacity: 0.8 }}
-                width="50px"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"
-              />
+              <a target="_blank" href="https://getbootstrap.com/">
+                <img
+                  style={{ opacity: 0.8 }}
+                  width="50px"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"
+                />
+              </a>
             </Card>
             {/* <Card customClass='small'  mobile={true} >1</Card> */}
             {/* contoh untuk yang mobile */}
           </div>
           <div className="flex flex-col justify-center">
             <Card>
-              <img
-                style={{ opacity: 0.8 }}
-                width="50px"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg"
-              />
+              <a target="_blank" href="https://laravel.com/">
+                <img
+                  alt="Laravel"
+                  style={{ opacity: 0.8 }}
+                  width="50px"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg"
+                />
+              </a>
             </Card>
             <Card>
-              <img
-                style={{ opacity: 0.8 }}
-                width="50px"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
-              />
+              <a target="_blank" href="https://www.figma.com/">
+                <img
+                  alt="Figma"
+                  style={{ opacity: 0.8 }}
+                  width="50px"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                />
+              </a>
             </Card>
           </div>
           <div className="flex flex-col justify-center">
