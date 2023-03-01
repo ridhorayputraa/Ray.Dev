@@ -4,8 +4,6 @@ import Image from "next/image";
 import { ReactSketchCanvas } from "react-sketch-canvas";
 import { forwardRef, useCallback, useEffect, useRef, useState } from "react";
 import CanvasControl from "@/components/CanvasControl";
-import HeaderMarquee from '../components/HeaderMarquee'
-import {Section} from '../components/Container'
 
 // Text
 import  Text from "@/pages/data/Text";
@@ -107,14 +105,15 @@ flex md:flex-row flex-col  mx-auto text-center justify-between content-center
             <HeaderMarquee>RIdho ganetng-ganteng-ganteng</HeaderMarquee>
         </Section> */}
 
-          <section className="Tech Stack sm:py-32">
+          <section className="Tech Stack mb-5 sm:py-32">
             <p className="mb-32 div font-bold text-3xl mt-6 md:mt-0 md:text-5xl">Tech Stack</p> 
             <Tech mobile={height} />
           </section>
 
 
-          <div className="project  py-32">
-            <h1 className="">Project</h1>
+          <div className="project  sm:py-32">
+            <p className="mb-32 div font-bold text-3xl mt-6 md:mt-0 md:text-5xl">Project</p>
+
           </div>
         </div>
       </Layout>
