@@ -2,6 +2,7 @@
 import { motion, useScroll, useSpring } from "framer-motion";
 
 import { DataImg } from "@/pages/data/Text";
+import Image from "next/image";
 
 export default function Project() {
   const { scrollYProgress } = useScroll();

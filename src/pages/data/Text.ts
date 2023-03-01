@@ -1,3 +1,5 @@
+
+
 const Text: any | object = [
   {
     heading: "Ridho Ray Putra",
@@ -13,14 +15,14 @@ const DataImg = [
     id: 1,
     name: "Aspirasiku",
     description: "",
-    link: "",
+    link: "/ray.svg",
     TechStack: "",
   },
   {
     id: 2,
     name: "Movieeflixx",
     description: "",
-    link: "",
+    link: "/Movie.png",
     TechStack: "",
   },
 ];
