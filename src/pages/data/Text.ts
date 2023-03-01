@@ -1,13 +1,22 @@
-const Text:any | object =  [
-
+const Text: any | object = [
   {
-    "heading" : "Ridho Ray Putra",
-    "subHeading" : "FrontEnd Developer & UI/UX Designer",
-    "paragraph":  "Hello everyone 👋 I’m a software engineer Who love and enthusiast about tech, and love for learning",
+    heading: "Ridho Ray Putra",
+    subHeading: "FrontEnd Developer & UI/UX Designer",
+    paragraph:
+      "Hello everyone 👋 I’m a software engineer Who love and enthusiast about tech, and love for learning",
   },
-  {
-    
-  }
+  {},
 ];
 
-export default Text;
+const DataImg = [
+  {
+    id: 1,
+    name: "Aspirasiku",
+  },
+  {
+    id: 2,
+    name: "Movieeflixx",
+  },
+];
+
+export { Text, DataImg };

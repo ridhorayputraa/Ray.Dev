@@ -6,15 +6,16 @@ import { forwardRef, useCallback, useEffect, useRef, useState } from "react";
 import CanvasControl from "@/components/CanvasControl";
 
 // Text
-import  Text from "@/pages/data/Text";
+import { Text } from "@/pages/data/Text";
 import Layout from "@/sections/Layout";
 import Footer from "@/sections/Footer";
 import Tech from "../sections/Tech";
+import Project from "@/sections/Project";
 
 // import luxy from "luxy.js";
 
 const Canvas = forwardRef((props, ref) => (
-  // @ts-ignore
+  // @ts-ignorepm
   <ReactSketchCanvas {...props} ref={ref} />
 ));
 Canvas.displayName = "Canvas";
@@ -24,17 +25,17 @@ export default function Home() {
   const canvasRef = useRef(null);
   const [height, setHeight] = useState(0);
 
-//   const init = () => {
-//   luxy.init()
-//   luxy.settings.wrapperSpeed = 0.02;
-// };
+  //   const init = () => {
+  //   luxy.init()
+  //   luxy.settings.wrapperSpeed = 0.02;
+  // };
 
-const isBrowser = () => typeof window !== 'undefined';
-// useEffect(() => {
-// if(isBrowser()){
-//  return init()
-// }
-// }, [])
+  const isBrowser = () => typeof window !== "undefined";
+  // useEffect(() => {
+  // if(isBrowser()){
+  //  return init()
+  // }
+  // }, [])
   useEffect(() => {
     setHeight(window.innerWidth);
   }, [height]);
@@ -101,19 +102,22 @@ flex md:flex-row flex-col  mx-auto text-center justify-between content-center
             />
           </div>
 
-        {/* <Section customClass="bg-radial-dark " direction="column">
+          {/* <Section customClass="bg-radial-dark " direction="column">
             <HeaderMarquee>RIdho ganetng-ganteng-ganteng</HeaderMarquee>
         </Section> */}
 
           <section className="Tech Stack mb-5 sm:py-32">
-            <p className="mb-32 div font-bold text-3xl mt-6 md:mt-0 md:text-5xl">Tech Stack</p> 
+            <p className="mb-32 div font-bold text-3xl mt-6 md:mt-0 md:text-5xl">
+              Tech Stack
+            </p>
             <Tech mobile={height} />
           </section>
 
-
           <div className="project  sm:py-32">
-            <p className="mb-32 div font-bold text-3xl mt-6 md:mt-0 md:text-5xl">Project</p>
-
+            <p className="mb-32 div font-bold text-3xl mt-6 md:mt-0 md:text-5xl">
+              Project
+            </p>
+            <Project />
           </div>
         </div>
       </Layout>
