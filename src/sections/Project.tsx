@@ -10,8 +10,7 @@ export default function Project() {
     damping: 30,
     restDelta: 0.001,
   });
-  
-  
+
 
   return (
     <>
@@ -19,7 +18,7 @@ export default function Project() {
         <Image id={image} />
       ))} */}
       {DataImg.map((image) => {
-        <h1>{image.name}</h1>;
+       return <h1>{image.name}</h1>;
       })}
     </>
   );

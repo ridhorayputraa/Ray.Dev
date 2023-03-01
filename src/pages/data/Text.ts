@@ -12,10 +12,16 @@ const DataImg = [
   {
     id: 1,
     name: "Aspirasiku",
+    description: "",
+    link: "",
+    TechStack: "",
   },
   {
     id: 2,
     name: "Movieeflixx",
+    description: "",
+    link: "",
+    TechStack: "",
   },
 ];
 

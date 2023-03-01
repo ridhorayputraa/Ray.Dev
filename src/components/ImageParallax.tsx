@@ -1,14 +1,16 @@
 import { useRef } from "react";
-import {
-  motion,
-  useScroll,
-  useTransform,
-  MotionValue,
-} from "framer-motion";
+import { motion, useScroll, useTransform, MotionValue } from "framer-motion";
 
 function useParallax(value: MotionValue<number>, distance: number) {
   return useTransform(value, [0, 1], [-distance, distance]);
 }
+
+type dataProps = {
+  id: number;
+  name: string;
+  description: string;
+  link: string;
+};
 
 function Image({ id }: { id: number }) {
   const ref = useRef(null);
