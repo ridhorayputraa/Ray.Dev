@@ -33,25 +33,25 @@ export default function ImageParallax({
         {/* <Image src={`${link}.png`} /> */}
         {/* <Image */}
         <motion.div whileHover={{ scale: 1.1 }}>
-          <div className=" w-3/4  mb-44 flex items-start p-6 rounded-lg dark:bg-zinc-800 bg-slate-200 shadow-2xl">
+          <div className=" w-3/5  mb-44 flex items-start p-4 rounded-lg dark:bg-zinc-800 bg-slate-200 shadow-2xl">
             <Image
               style={{
-                borderRadius:'8px',
+                borderRadius: "8px",
                 textShadow: "2px 2px 4px #00000",
                 boxShadow: "10px 10px 5px rgba(0, 0, 0, 0.3)",
               }}
+              width={530}
+              height={530}
               src={`${link}.png`}
               alt={name}
-              width={700}
               loading="lazy"
-              height={700}
             />
           </div>
         </motion.div>
         {/* src="/Movie.png" alt="A London skyscraper" /> */}
       </div>
 
-      <div className="ml-96 flex flex-col left-0 text-left">
+      <div className="ml-96 flex flex-col text-left">
         <motion.h2
           className="text-3xl ml-44 font-bold shadow-slate-900 drop-shadow-2xl "
           style={{ y }}
