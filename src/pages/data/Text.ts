@@ -22,7 +22,7 @@ const DataImg = [
   {
     id: 2,
     name: "Movieeflixx",
-    description: "",
+    description: "Movies app With authentication (Netflix Clone)",
     link: "/Movie",
     page:"https://movieeflixx.netlify.app/",
     techStack: "React, Redux, Firebase, Tailwinds",
