@@ -13,20 +13,21 @@ export default function Project() {
     restDelta: 0.001,
   });
 
-
   return (
-    <>
+    <div>
       {/* {[1, 2, 3, 4, 5].map((image) => (
         <Image id={image} />
       ))} */}
       {DataImg.map((image) => {
-       return <ImageParallax 
-       id={image.id}
-       name={image.name} 
-       description={image.description}
-       link={image.link}
-       />
+        return (
+          <ImageParallax
+            id={image.id}
+            name={image.name}
+            description={image.description}
+            link={image.link}
+          />
+        );
       })}
-    </>
+    </div>
   );
 }
