@@ -15,15 +15,15 @@ const DataImg = [
     id: 1,
     name: "Aspirasiku",
     description: "",
-    link: "/icon",
-    TechStack: "",
+    link: "/aspirasiku",
+    TechStack: "Laravel, Mysql, Bootsrap",
   },
   {
     id: 2,
     name: "Movieeflixx",
     description: "",
     link: "/Movie",
-    TechStack: "",
+    TechStack: "React, Redux, Tailwinds",
   },
   {
     id: 3,
