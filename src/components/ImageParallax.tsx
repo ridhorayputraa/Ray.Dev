@@ -36,6 +36,7 @@ export default function ImageParallax({
           <div className=" w-3/4  mb-44 flex items-start p-6 rounded-lg dark:bg-zinc-800 bg-slate-200 shadow-2xl">
             <Image
               style={{
+                borderRadius:'8px',
                 textShadow: "2px 2px 4px #00000",
                 boxShadow: "10px 10px 5px rgba(0, 0, 0, 0.3)",
               }}
@@ -52,17 +53,17 @@ export default function ImageParallax({
 
       <div className="ml-96 flex flex-col left-0 text-left">
         <motion.h2
-          className="text-2xl ml-44 font-bold shadow-slate-900 drop-shadow-2xl "
+          className="text-3xl ml-44 font-bold shadow-slate-900 drop-shadow-2xl "
           style={{ y }}
         >{`${name}`}</motion.h2>
         <motion.h2
-          className="text-lg ml-44 font-normal shadow-slate-900 drop-shadow-2xl "
+          className="text-lg ml-44 mt-2 font-normal shadow-slate-900 drop-shadow-2xl "
           style={{ y }}
         >{`${description}`}</motion.h2>
         <motion.h2
-          className="text-md ml-44 font-medium shadow-slate-900 drop-shadow-2xl "
+          className="text-md ml-44 mt-2 font-medium shadow-slate-900 drop-shadow-2xl "
           style={{ y }}
-        >{`${techStack}`}</motion.h2>
+        >{`TECH: ${techStack}`}</motion.h2>
 
         <motion.h2
           className="text-md ml-44 tracking-widest mt-5 font-medium shadow-slate-900 drop-shadow-2xl "

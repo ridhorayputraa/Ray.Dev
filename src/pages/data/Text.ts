@@ -25,7 +25,7 @@ const DataImg = [
     description: "",
     link: "/Movie",
     page:"https://movieeflixx.netlify.app/",
-    techStack: "React, Redux, Tailwinds",
+    techStack: "React, Redux, Firebase, Tailwinds",
   },
   {
     id: 3,
@@ -37,11 +37,11 @@ const DataImg = [
   },
   {
     id: 4,
-    name: "Movieeflixx",
-    description: "",
-    link: "/Movie",
-    page:"",
-    techStack: "",
+    name: "Anim.Me",
+    description: "Landing Page streaming anime website",
+    link: "/anime",
+    page:"https://anim-me.vercel.app/",
+    techStack: "HTML & Vanilla Css",
   },
   {
     id: 5,
