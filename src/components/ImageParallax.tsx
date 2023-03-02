@@ -21,14 +21,14 @@ export default function ImageParallax({
 }: dataProps) {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref });
-  const y = useParallax(scrollYProgress, 300);
+  const y = useParallax(scrollYProgress, 400);
 
   return (
     <section>
       <div ref={ref}>
         {/* <Image src={`${link}.png`} /> */}
         {/* <Image */}
-        <div className="border w-2/4 bg-white p-2">
+        <div className="border w-2/4 mb-44 bg-white p-2">
         <Image
           src={`${link}.png`}
           alt={name}
