@@ -14,7 +14,7 @@ const DataImg = [
   {
     id: 1,
     name: "Aspirasiku",
-    description: "",
+    description: "This is Aspirasiku, Aspirasiku is a platform for sharing what you thought",
     link: "/aspirasiku",
     page:"https://aspirasikuu.000webhostapp.com/",
     techStack: "Laravel, Mysql, Bootsrap",
