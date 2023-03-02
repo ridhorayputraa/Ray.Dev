@@ -7,10 +7,12 @@ function useParallax(value: MotionValue<number>, distance: number) {
 }
 
 type dataProps = {
-  id: number;
+  id?: number;
   name: string;
   description: string;
   link: any;
+  techStack: string;
+  page: string;
 };
 
 export default function ImageParallax({
@@ -18,10 +20,12 @@ export default function ImageParallax({
   name,
   description,
   link,
+  techStack,
+  page,
 }: dataProps) {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref });
-  const y = useParallax(scrollYProgress, 400);
+  const y = useParallax(scrollYProgress, 550);
 
   return (
     <section>
@@ -29,7 +33,7 @@ export default function ImageParallax({
         {/* <Image src={`${link}.png`} /> */}
         {/* <Image */}
         <motion.div whileHover={{ scale: 1.1 }}>
-          <div className="w-2/4 mr- mb-44 flex items-start p-6 rounded-lg dark:bg-zinc-800 bg-slate-200 shadow-2xl">
+          <div className=" w-3/4  mb-44 flex items-start p-6 rounded-lg dark:bg-zinc-800 bg-slate-200 shadow-2xl">
             <Image
               style={{
                 textShadow: "2px 2px 4px #00000",
@@ -37,17 +41,36 @@ export default function ImageParallax({
               }}
               src={`${link}.png`}
               alt={name}
-              width={500}
+              width={700}
               loading="lazy"
-              height={500}
+              height={700}
             />
           </div>
         </motion.div>
         {/* src="/Movie.png" alt="A London skyscraper" /> */}
       </div>
-      <motion.h2 style={{ y }}>{`${id}`}</motion.h2>
-      <motion.h2 className="text-lg font-semibold shadow-slate-900 drop-shadow-2xl shadow-current" style={{ y }}>{`${name}`}</motion.h2>
-      <motion.h2 style={{ y }}>{`${description}`}</motion.h2>
+
+      <div className="ml-96 flex flex-col left-0 text-left">
+        <motion.h2
+          className="text-2xl ml-44 font-bold shadow-slate-900 drop-shadow-2xl "
+          style={{ y }}
+        >{`${name}`}</motion.h2>
+        <motion.h2
+          className="text-lg ml-44 font-normal shadow-slate-900 drop-shadow-2xl "
+          style={{ y }}
+        >{`${description}`}</motion.h2>
+        <motion.h2
+          className="text-md ml-44 font-medium shadow-slate-900 drop-shadow-2xl "
+          style={{ y }}
+        >{`${techStack}`}</motion.h2>
+
+        <motion.h2
+          className="text-md ml-44 tracking-widest mt-5 font-medium shadow-slate-900 drop-shadow-2xl "
+          style={{ y }}
+        >
+          <a href={page}>See Project!</a>
+        </motion.h2>
+      </div>
     </section>
   );
 }

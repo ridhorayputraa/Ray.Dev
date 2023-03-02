@@ -21,10 +21,12 @@ export default function Project() {
       {DataImg.map((image) => {
         return (
           <ImageParallax
-            id={image.id}
+            key={image.id}
             name={image.name}
             description={image.description}
             link={image.link}
+            techStack={image.techStack}
+            page={image.page}
           />
         );
       })}
