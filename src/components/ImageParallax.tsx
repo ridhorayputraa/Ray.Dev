@@ -29,6 +29,7 @@ export default function ImageParallax({
 
   return (
     <section>
+      {/* Cek kondisi Mobile || Dekstop */}
       <div ref={ref}>
         {/* <Image src={`${link}.png`} /> */}
         {/* <Image */}
@@ -66,10 +67,12 @@ export default function ImageParallax({
         >{`TECH: ${techStack}`}</motion.h2>
 
         <motion.h2
-          className="text-md ml-44 tracking-widest mt-5 font-medium shadow-slate-900 drop-shadow-2xl "
+          className="text-md ml-44  tracking-widest mt-5 font-medium shadow-slate-900 drop-shadow-2xl "
           style={{ y }}
         >
-          <a href={page}>See Project!</a>
+          <a className="hover:opacity-80" href={page}>
+            See Project!
+          </a>
         </motion.h2>
       </div>
     </section>
