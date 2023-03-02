@@ -28,15 +28,15 @@ export default function ImageParallax({
       <div ref={ref}>
         {/* <Image src={`${link}.png`} /> */}
         {/* <Image */}
-        <div className="border w-2/4 mb-44 bg-white p-2">
-        <Image
-          src={`${link}.png`}
-          alt={name}
-          width={500}
-          loading="lazy"
-          height={500}
-        />
-          </div>
+        <div className="border w-2/4 mb-44 p-2 rounded-lg dark:bg-zinc-800 bg-slate-200 shadow-2xl">
+          <Image
+            src={`${link}.png`}
+            alt={name}
+            width={500}
+            loading="lazy"
+            height={500}
+          />
+        </div>
         {/* src="/Movie.png" alt="A London skyscraper" /> */}
       </div>
       <motion.h2 style={{ y }}>{`${id}`}</motion.h2>
