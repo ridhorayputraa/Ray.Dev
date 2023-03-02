@@ -29,15 +29,17 @@ export default function ImageParallax({
         {/* <Image src={`${link}.png`} /> */}
         {/* <Image */}
         <Image
-          src="/ray.svg"
-          alt="Picture of the author"
-          width={250}
+          src={`${link}.png`}
+          alt={name}
+          width={450}
           loading="lazy"
-          height={250}
+          height={450}
         />
         {/* src="/Movie.png" alt="A London skyscraper" /> */}
       </div>
-      <motion.h2 style={{ y }}>{`#00${id}`}</motion.h2>
+      <motion.h2 style={{ y }}>{`${id}`}</motion.h2>
+      <motion.h2 style={{ y }}>{`${name}`}</motion.h2>
+      <motion.h2 style={{ y }}>{`${description}`}</motion.h2>
     </section>
   );
 }

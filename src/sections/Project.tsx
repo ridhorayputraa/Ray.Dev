@@ -3,6 +3,7 @@ import { motion, useScroll, useSpring } from "framer-motion";
 
 import { DataImg } from "@/pages/data/Text";
 import Image from "next/image";
+import ImageParallax from "@/components/ImageParallax";
 
 export default function Project() {
   const { scrollYProgress } = useScroll();
@@ -19,7 +20,12 @@ export default function Project() {
         <Image id={image} />
       ))} */}
       {DataImg.map((image) => {
-       return <h1>{image.name}</h1>;
+       return <ImageParallax 
+       id={image.id}
+       name={image.name} 
+       description={image.description}
+       link={image.link}
+       />
       })}
     </>
   );
