@@ -24,7 +24,9 @@ export default function Tech({ mobile }: cardProps) {
               <a target="_blank" href="https://tailwindcss.com/">
                 <img
                   alt="Tailwindcss"
-                  style={{ opacity: 0.8 }}
+                  style={{
+                    opacity: 0.8,
+                  }}
                   width="30px"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
                 />
