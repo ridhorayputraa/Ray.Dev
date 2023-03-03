@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform, MotionValue } from "framer-motion";
 import Image from "next/image";
 
 function useParallax(value: MotionValue<number>, distance: number) {
-  return useTransform(value, [0, 1], [-distance, distance]);
+  return useTransform(value, [0, 4], [-distance, distance]);
 }
 
 type dataProps = {
@@ -27,9 +27,8 @@ export default function ImageParallax({
 }: dataProps) {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref });
-  const y = useParallax(scrollYProgress, 550);
+  const y = useParallax(scrollYProgress, 450);
 
-  console.log(laptop);
   return (
     <section>
       {/* Cek kondisi Mobile || Dekstop */}
@@ -68,8 +67,6 @@ export default function ImageParallax({
               />
             </div>
           )}
-          
-            
         </motion.div>
         {/* src="/Movie.png" alt="A London skyscraper" /> */}
       </div>
@@ -89,7 +86,7 @@ export default function ImageParallax({
         >{`TECH: ${techStack}`}</motion.h2>
 
         <motion.h2
-          className="text-md ml-44  tracking-widest mt-5 font-medium shadow-slate-900 drop-shadow-2xl "
+          className="text-md ml-44   mt-5 font-medium shadow-slate-900 drop-shadow-2xl "
           style={{ y }}
         >
           <a className="hover:opacity-80" href={page}>
