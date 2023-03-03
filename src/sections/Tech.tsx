@@ -10,13 +10,7 @@ type cardProps = {
 
 export default function Tech({ mobile }: cardProps) {
   return (
-    <div
-      className={
-        mobile <= 996
-          ? ""
-          : " flex container mx-auto flex-col justify-between sm:justify-between md:justify-between  h-full sm:flex-row "
-      }
-    >
+    <div >
       {mobile <= 966 ? (
         <div className="flex flex-col  sm:mb-0 mb-5 ">
           <div>

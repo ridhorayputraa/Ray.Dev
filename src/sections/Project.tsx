@@ -13,7 +13,7 @@ export default function Project({ laptop }: any) {
     restDelta: 0.001,
   });
 
-  console.log(laptop);
+
 
   // Laptop => 1280
 
@@ -22,7 +22,9 @@ export default function Project({ laptop }: any) {
       {/* {[1, 2, 3, 4, 5].map((image) => (
         <Image id={image} />
       ))} */}
-
+{
+  laptop <= 996 ?  "" : ""
+}
       {DataImg.map((image) => {
         return (
           <ImageParallax
