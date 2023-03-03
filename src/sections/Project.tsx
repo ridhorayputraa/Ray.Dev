@@ -4,6 +4,7 @@ import { motion, useScroll, useSpring } from "framer-motion";
 import { DataImg } from "@/pages/data/Text";
 import Image from "next/image";
 import ImageParallax from "@/components/ImageParallax";
+import ImageMobile from "@/components/ImageMobile";
 
 export default function Project({ laptop }: any) {
   const { scrollYProgress } = useScroll();
@@ -13,8 +14,6 @@ export default function Project({ laptop }: any) {
     restDelta: 0.001,
   });
 
-
-
   // Laptop => 1280
 
   return (
@@ -22,22 +21,38 @@ export default function Project({ laptop }: any) {
       {/* {[1, 2, 3, 4, 5].map((image) => (
         <Image id={image} />
       ))} */}
-{
-  laptop <= 996 ?  "" : ""
-}
-      {DataImg.map((image) => {
-        return (
-          <ImageParallax
-            key={image.id}
-            name={image.name}
-            description={image.description}
-            link={image.link}
-            techStack={image.techStack}
-            page={image.page}
-            laptop={laptop}
-          />
-        );
-      })}
+      {laptop <= 996 ? (
+        <>
+          {DataImg.map((image) => {
+            return (
+              <ImageMobile
+                key={image.id}
+                name={image.name}
+                description={image.description}
+                link={image.link}
+                techStack={image.techStack}
+                page={image.page}
+              />
+            );
+          })}
+        </>
+      ) : (
+        <>
+          {DataImg.map((image) => {
+            return (
+              <ImageParallax
+                key={image.id}
+                name={image.name}
+                description={image.description}
+                link={image.link}
+                techStack={image.techStack}
+                page={image.page}
+                laptop={laptop}
+              />
+            );
+          })}
+        </>
+      )}
     </div>
   );
 }

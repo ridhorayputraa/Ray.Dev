@@ -93,7 +93,7 @@ export default function ImageParallax({
           style={{ y }}
         >
           <a className="hover:opacity-80" href={page}>
-            See Project!
+            Visit
           </a>
         </motion.h2>
       </div>
