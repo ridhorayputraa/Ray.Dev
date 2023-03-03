@@ -13,6 +13,7 @@ type dataProps = {
   link: any;
   techStack: string;
   page: string;
+  laptop?: any;
 };
 
 export default function ImageParallax({
@@ -22,11 +23,13 @@ export default function ImageParallax({
   link,
   techStack,
   page,
+  laptop,
 }: dataProps) {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref });
   const y = useParallax(scrollYProgress, 550);
 
+  console.log(laptop);
   return (
     <section>
       {/* Cek kondisi Mobile || Dekstop */}
@@ -34,20 +37,39 @@ export default function ImageParallax({
         {/* <Image src={`${link}.png`} /> */}
         {/* <Image */}
         <motion.div whileHover={{ scale: 1.1 }}>
-          <div className=" w-3/5  mb-44 flex items-start p-4 rounded-lg dark:bg-zinc-800 bg-slate-200 shadow-2xl">
-            <Image
-              style={{
-                borderRadius: "8px",
-                textShadow: "2px 2px 4px #00000",
-                boxShadow: "10px 10px 5px rgba(0, 0, 0, 0.3)",
-              }}
-              width={530}
-              height={530}
-              src={`${link}.png`}
-              alt={name}
-              loading="lazy"
-            />
-          </div>
+          {laptop == 1280 ? (
+            <div className=" w-3/4 max-w-screen-lg mb-44 flex items-start p-4 rounded-lg dark:bg-zinc-800 bg-slate-200 shadow-2xl">
+              <Image
+                style={{
+                  borderRadius: "8px",
+                  textShadow: "2px 2px 4px #00000",
+                  boxShadow: "10px 10px 5px rgba(0, 0, 0, 0.3)",
+                }}
+                width={730}
+                height={730}
+                src={`${link}.png`}
+                alt={name}
+                loading="lazy"
+              />
+            </div>
+          ) : (
+            <div className=" w-3/5 max-w-screen-lg mb-44 flex items-start p-4 rounded-lg dark:bg-zinc-800 bg-slate-200 shadow-2xl">
+              <Image
+                style={{
+                  borderRadius: "8px",
+                  textShadow: "2px 2px 4px #00000",
+                  boxShadow: "10px 10px 5px rgba(0, 0, 0, 0.3)",
+                }}
+                width={530}
+                height={530}
+                src={`${link}.png`}
+                alt={name}
+                loading="lazy"
+              />
+            </div>
+          )}
+          
+            
         </motion.div>
         {/* src="/Movie.png" alt="A London skyscraper" /> */}
       </div>

@@ -5,7 +5,7 @@ import { DataImg } from "@/pages/data/Text";
 import Image from "next/image";
 import ImageParallax from "@/components/ImageParallax";
 
-export default function Project() {
+export default function Project({ laptop }: any) {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
@@ -13,11 +13,16 @@ export default function Project() {
     restDelta: 0.001,
   });
 
+  console.log(laptop);
+
+  // Laptop => 1280
+
   return (
     <div>
       {/* {[1, 2, 3, 4, 5].map((image) => (
         <Image id={image} />
       ))} */}
+
       {DataImg.map((image) => {
         return (
           <ImageParallax
@@ -27,6 +32,7 @@ export default function Project() {
             link={image.link}
             techStack={image.techStack}
             page={image.page}
+            laptop={laptop}
           />
         );
       })}
