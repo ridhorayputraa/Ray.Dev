@@ -24,65 +24,39 @@ export default function ImageMobile({
   page,
 }: dataProps) {
   return (
-    <section>
+    <section className="w-3/6 ">
       {/* Cek kondisi Mobile || Dekstop */}
-      <div className="flex flex-col flex-wrap">
-        {/* <Image src={`${link}.png`} /> */}
-        {/* <Image */}
-        <motion.div className="" whileHover={{ scale: 1.1 }}>
-          <div className=" p-4 flex flex-row w-2/5 rounded-lg  dark:bg-zinc-800 bg-slate-200 shadow-2xl">
-            <Image
-              style={{
-                borderRadius: "8px",
-                textShadow: "2px 2px 4px #00000",
-                boxShadow: "10px 10px 5px rgba(0, 0, 0, 0.3)",
-              }}
-              width={530}
-              height={530}
-              src={`${link}.png`}
-              alt={name}
-              loading="lazy"
-            />
-            <div className="">
-              <motion.h2 className="text-3xl  font-bold shadow-slate-900 drop-shadow-2xl ">{`${name}`}</motion.h2>
-              <motion.h2 className="text-lg  mt-2 font-normal shadow-slate-900 drop-shadow-2xl ">{`${description}`}</motion.h2>
-              <motion.h2 className="text-md  mt-2 font-medium shadow-slate-900 drop-shadow-2xl ">{`TECH: ${techStack}`}</motion.h2>
 
-              <motion.h2 className="text-md   tracking-widest mt-5 font-medium shadow-slate-900 drop-shadow-2xl ">
-                <a className="hover:opacity-80" href={page}>
-                  Visit
-                </a>
-              </motion.h2>
-            </div>
-          </div>
-          <div className=" p-4 rounded-lg  dark:bg-zinc-800 bg-slate-200 shadow-2xl">
-            <Image
-              style={{
-                borderRadius: "8px",
-                textShadow: "2px 2px 4px #00000",
-                boxShadow: "10px 10px 5px rgba(0, 0, 0, 0.3)",
-              }}
-              width={530}
-              height={530}
-              src={`${link}.png`}
-              alt={name}
-              loading="lazy"
-            />
-            <div className="">
-              <motion.h2 className="text-3xl  font-bold shadow-slate-900 drop-shadow-2xl ">{`${name}`}</motion.h2>
-              <motion.h2 className="text-lg  mt-2 font-normal shadow-slate-900 drop-shadow-2xl ">{`${description}`}</motion.h2>
-              <motion.h2 className="text-md  mt-2 font-medium shadow-slate-900 drop-shadow-2xl ">{`TECH: ${techStack}`}</motion.h2>
+      {/* <Image src={`${link}.png`} /> */}
+      {/* <Image */}
+      <motion.div className="mr-10 mb-10" whileHover={{ scale: 1.1 }}>
+        <div className="p-4  rounded-lg  dark:bg-zinc-800 bg-slate-200 shadow-2xl">
+          <Image
+            style={{
+              borderRadius: "8px",
+              textShadow: "2px 2px 4px #00000",
+              boxShadow: "10px 10px 5px rgba(0, 0, 0, 0.3)",
+            }}
+            width={530}
+            height={530}
+            src={`${link}.png`}
+            alt={name}
+            loading="lazy"
+          />
+          <div className="mt-10">
+            <motion.h2 className="text-3xl  font-bold shadow-slate-900 drop-shadow-2xl ">{`${name}`}</motion.h2>
+            <motion.h2 className="text-lg  mt-2 font-normal shadow-slate-900 drop-shadow-2xl ">{`${description}`}</motion.h2>
+            <motion.h2 className="text-md  mt-2 font-medium shadow-slate-900 drop-shadow-2xl ">{`TECH: ${techStack}`}</motion.h2>
 
-              <motion.h2 className="text-md   tracking-widest mt-5 font-medium shadow-slate-900 drop-shadow-2xl ">
-                <a className="hover:opacity-80" href={page}>
-                  Visit
-                </a>
-              </motion.h2>
-            </div>
+            <motion.h2 className="text-md   tracking-widest mt-5 font-medium shadow-slate-900 drop-shadow-2xl ">
+              <a className="hover:opacity-80" href={page}>
+                Visit
+              </a>
+            </motion.h2>
           </div>
-        </motion.div>
-        {/* src="/Movie.png" alt="A London skyscraper" /> */}
-      </div>
+        </div>
+      </motion.div>
+      {/* src="/Movie.png" alt="A London skyscraper" /> */}
     </section>
   );
 }

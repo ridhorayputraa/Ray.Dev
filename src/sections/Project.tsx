@@ -22,7 +22,7 @@ export default function Project({ laptop }: any) {
         <Image id={image} />
       ))} */}
       {laptop <= 996 ? (
-        <>
+        <div className="flex  flex-wrap sm:flex-nowrap max-w-screen items-center justify-center">
           {DataImg.map((image) => {
             return (
               <ImageMobile
@@ -35,7 +35,7 @@ export default function Project({ laptop }: any) {
               />
             );
           })}
-        </>
+        </div>
       ) : (
         <>
           {DataImg.map((image) => {

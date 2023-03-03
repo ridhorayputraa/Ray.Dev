@@ -10,9 +10,15 @@ type cardProps = {
 
 export default function Tech({ mobile }: cardProps) {
   return (
-    <div >
+    <div
+      className={
+        mobile <= 996
+          ? ""
+          : " flex container mx-auto flex-col justify-between sm:justify-between md:justify-between  h-full sm:flex-row "
+      }
+    >
       {mobile <= 966 ? (
-        <div className="flex flex-col  sm:mb-0 mb-5 ">
+        <div className="">
           <div>
             <Card customClass={"px-8 py-2"} mobile={true}>
               <a target="_blank" href="https://tailwindcss.com/">
