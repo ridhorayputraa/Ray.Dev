@@ -52,7 +52,7 @@ export default function Home() {
 
   return (
     <>
-      <Layout>
+      <Layout className="text-center">
         {/* Punya aing
 flex md:flex-row flex-col  mx-auto text-center justify-between content-center
  */}
@@ -117,7 +117,7 @@ flex md:flex-row flex-col  mx-auto text-center justify-between content-center
             <p className="mb-32 div font-bold text-3xl mt-6 md:mt-0 md:text-5xl">
               Project
             </p>
-            <Project laptop={height}  />
+            <Project laptop={height} />
           </div>
         </div>
       </Layout>

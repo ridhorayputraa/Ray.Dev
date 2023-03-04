@@ -4,20 +4,26 @@ import Footer from "./Footer";
 import React from "react";
 
 type chilrenProps = {
-  children : React.ReactNode
-}
+  children: React.ReactNode;
+  className?: any;
+};
 
-const Layout = ({ children }:chilrenProps) => {
+const Layout = ({ children, className }: chilrenProps) => {
   return (
     <>
       <Head>
         <title>Rayssss</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"/>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+        />
         <link rel="icon" href="/icon.png" />
       </Head>
 
       <div className="h-full  ">
-        <main className="layout layout flex flex-col flex-1  flex flex-col-reverse items-center  justify-center leading-6 md:flex-row  body-font font-poppins flex flex-col flex-1  flex sm:flex-col-reverse text-center justify-center flex-col-reverse items-center  justify-between  sm:flex-col      leading-6 md:flex-row">
+        <main
+          className={`layout ${className}    items-center  justify-center leading-6  body-font font-poppins   sm:flex-col-reverse       md:flex-row`}
+        >
           {children}
         </main>
       </div>

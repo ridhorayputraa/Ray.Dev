@@ -4,7 +4,6 @@ import { HiXMark } from "react-icons/hi2";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-
 // type childrenProps = {
 //   children: React.ReactNode
 // }
@@ -22,9 +21,7 @@ export default function Navbar() {
             : "pl-6   navbar items-center -ml-3.5 hidden md:flex"
         }
       >
-        <div
-          className=" sm:px-10 2xl:px-60 md:px-10 xl:px-60"
-        >
+        <div className=" sm:px-10 2xl:px-60 md:px-10 xl:px-60">
           <ul
             className={
               Mobile
@@ -45,12 +42,6 @@ export default function Navbar() {
               <li className="font-semibold sm:text-md px-4 py-2 hoover">
                 Portofolio
               </li>
-            </Link>
-            <Link
-              href="/blog"
-              className={router.pathname == "/blog" ? "active" : ""}
-            >
-              <li className="font-semibold px-4 py-2 hoover">Blog</li>
             </Link>
             <Link
               href="/about"
