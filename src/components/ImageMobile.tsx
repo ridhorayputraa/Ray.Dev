@@ -49,7 +49,7 @@ export default function ImageMobile({
             <motion.h2 className="text-md  mt-2 font-medium shadow-slate-900 drop-shadow-2xl ">{`TECH: ${techStack}`}</motion.h2>
 
             <motion.h2 className="text-md   tracking-widest mt-5 font-medium shadow-slate-900 drop-shadow-2xl ">
-              <a className="hover:opacity-80" href={page}>
+              <a className="hover:opacity-80 dark:hover:text-blue-900 hover:text-blue-400 " href={page}>
                 Visit
               </a>
             </motion.h2>
