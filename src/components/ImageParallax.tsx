@@ -36,7 +36,7 @@ export default function ImageParallax({
         {/* <Image src={`${link}.png`} /> */}
         {/* <Image */}
         <motion.div whileHover={{ scale: 1.1 }}>
-          <div className=" w-3/4 max-w-screen-lg mb-44 flex items-start p-4 rounded-lg dark:bg-zinc-800 bg-slate-200 shadow-2xl">
+          <div className=" lg:w-3/5 md:3/4  mb-44 flex items-start p-4 rounded-lg dark:bg-zinc-800 bg-slate-200 shadow-2xl ">
             <Image
               className=" dark:brightness-75"
               style={{
@@ -44,8 +44,8 @@ export default function ImageParallax({
                 textShadow: "2px 2px 4px #00000",
                 boxShadow: "10px 10px 5px rgba(0, 0, 0, 0.3)",
               }}
-              width={730}
-              height={730}
+              width={530}
+              height={530}
               src={`${link}.png`}
               alt={name}
               loading="lazy"
