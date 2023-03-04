@@ -18,7 +18,9 @@ const Text: textData = [
     heading: "Ridho Ray Putra",
     subHeading: "FrontEnd Developer & UI/UX Designer",
     paragraph:
-      "Hello everyone 👋 I’m a software engineer Who love and enthusiast about tech, and love for learning",
+      "Hello everyone 👋 Looking for a skilled front-end developer to solve your problem? Look no further! I have the expertise and knowledge to provide you with the perfect solution.",
+    // paragraph:
+    //   "Hello everyone 👋 I’m a software engineer Who love and enthusiast about tech, and love for learning",
   },
 ];
 
