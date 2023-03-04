@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform, MotionValue } from "framer-motion";
 import Image from "next/image";
 
 function useParallax(value: MotionValue<number>, distance: number) {
-  return useTransform(value, [0, 4], [-distance, distance]);
+  return useTransform(value, [0, 1], [-distance, distance]);
 }
 
 type dataProps = {
@@ -27,7 +27,7 @@ export default function ImageParallax({
 }: dataProps) {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref });
-  const y = useParallax(scrollYProgress, 450);
+  const y = useParallax(scrollYProgress, 300);
 
   return (
     <section>
@@ -36,8 +36,23 @@ export default function ImageParallax({
         {/* <Image src={`${link}.png`} /> */}
         {/* <Image */}
         <motion.div whileHover={{ scale: 1.1 }}>
-          {laptop == 1280 ? (
-            <div className=" w-3/4 max-w-screen-lg mb-44 flex items-start p-4 rounded-lg dark:bg-zinc-800 bg-slate-200 shadow-2xl">
+             <div className=" w-3/4 max-w-screen-lg mb-44 flex items-start p-4 rounded-lg dark:bg-zinc-800 bg-slate-200 shadow-2xl">
+              <Image
+              className="brightness-75"
+                style={{
+                  borderRadius: "8px",
+                  textShadow: "2px 2px 4px #00000",
+                  boxShadow: "10px 10px 5px rgba(0, 0, 0, 0.3)",
+                }}
+                width={730}
+                height={730}
+                src={`${link}.png`}
+                alt={name}
+                loading="lazy"
+              />
+            </div>
+          {/* {laptop == 1280 ? (
+            <div className=" w-3/5 xl:w-3/4 max-w-screen-lg mb-44 flex items-start p-4 rounded-lg dark:bg-zinc-800 bg-slate-200 shadow-2xl">
               <Image
                 style={{
                   borderRadius: "8px",
@@ -66,14 +81,14 @@ export default function ImageParallax({
                 loading="lazy"
               />
             </div>
-          )}
+          )} */}
         </motion.div>
         {/* src="/Movie.png" alt="A London skyscraper" /> */}
       </div>
 
       <div className="ml-96 flex flex-col text-left">
         <motion.h2
-          className="text-3xl ml-44 font-bold shadow-slate-900 drop-shadow-2xl "
+          className="text-3xl ml-44 font-bold stroke-slate-900 shadow-slate-900 drop-shadow-2xl "
           style={{ y }}
         >{`${name}`}</motion.h2>
         <motion.h2

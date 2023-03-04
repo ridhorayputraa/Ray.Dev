@@ -1,5 +1,3 @@
-
-
 const Text: any | object = [
   {
     heading: "Ridho Ray Putra",
@@ -14,9 +12,10 @@ const DataImg = [
   {
     id: 1,
     name: "Aspirasiku",
-    description: "This is Aspirasiku, Aspirasiku is a platform for sharing what you thought",
+    description:
+      "This is Aspirasiku, Aspirasiku is a platform for sharing what you thought",
     link: "/aspirasiku",
-    page:"https://aspirasikuu.000webhostapp.com/",
+    page: "https://aspirasikuu.000webhostapp.com/",
     techStack: "Laravel, Mysql, Bootsrap",
   },
   {
@@ -24,23 +23,24 @@ const DataImg = [
     name: "Movieeflixx",
     description: "Movies app With authentication (Netflix Clone)",
     link: "/Movie",
-    page:"https://movieeflixx.netlify.app/",
+    page: "https://movieeflixx.netlify.app/",
     techStack: "React, Redux, Firebase, Tailwinds",
   },
   {
     id: 3,
-    name: "Aspirasiku",
-    description: "",
-    link: "/icon",
-    page:"",
-    techStack: "",
+    name: "TypoTyping",
+    description:
+      "Typo Typing, the ultimate web application for honing your typing skills!",
+    link: "/typotyping",
+    page: "https://typo-typing.vercel.app/",
+    techStack: "React, TS, Tailwindcss",
   },
   {
     id: 4,
     name: "Anim.Me",
     description: "Landing Page streaming anime website",
     link: "/anime",
-    page:"https://anim-me.vercel.app/",
+    page: "https://anim-me.vercel.app/",
     techStack: "HTML & Vanilla Css",
   },
   {
@@ -48,7 +48,7 @@ const DataImg = [
     name: "Aspirasiku",
     description: "",
     link: "/icon",
-    page:"",
+    page: "",
     techStack: "",
   },
   {
@@ -56,7 +56,7 @@ const DataImg = [
     name: "Movieeflixx",
     description: "",
     link: "/Movie",
-    page:"",
+    page: "",
     techStack: "",
   },
 ];

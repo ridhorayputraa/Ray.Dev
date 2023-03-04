@@ -24,12 +24,12 @@ export default function ImageMobile({
   page,
 }: dataProps) {
   return (
-    <section className="sm:w-3/6 w-screen  ">
+    <section className="sm:w-3/6 w-screen overflow-y-hidden ">
       {/* Cek kondisi Mobile || Dekstop */}
 
       {/* <Image src={`${link}.png`} /> */}
       {/* <Image */}
-      <motion.div className="m-10"  whileHover={{ scale: 1.1 }}>
+      <motion.div className="m-10 mb-20" whileHover={{ scale: 1.1 }}>
         <div className="p-4  rounded-lg  dark:bg-zinc-800 bg-slate-200 shadow-2xl">
           <Image
             style={{
