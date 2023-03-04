@@ -104,7 +104,10 @@ export default function ImageParallax({
           className="text-md ml-44   mt-5 font-medium shadow-slate-900 drop-shadow-2xl "
           style={{ y }}
         >
-          <a className="hover:opacity-80" href={page}>
+          <a
+            className="hover:opacity-90  dark:hover:text-blue-900 hover:text-blue-400 "
+            href={page}
+          >
             Visit
           </a>
         </motion.h2>
