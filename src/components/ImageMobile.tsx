@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { motion, useScroll, useTransform, MotionValue } from "framer-motion";
 import Image from "next/image";
 
@@ -29,7 +29,7 @@ export default function ImageMobile({
 
       {/* <Image src={`${link}.png`} /> */}
       {/* <Image */}
-      <motion.div className="m-10 mb-20" whileHover={{ scale: 1.1 }}>
+      <motion.div className="m-10 h-full  mb-20" whileHover={{ scale: 1.1 }}>
         <div className="p-4  rounded-lg  dark:bg-zinc-800 bg-slate-200 shadow-2xl">
           <Image
             style={{
