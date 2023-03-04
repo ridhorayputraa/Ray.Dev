@@ -1,14 +1,28 @@
-const Text: any | object = [
+type textData = {
+  heading: string;
+  subHeading: string;
+  paragraph: string;
+}[];
+
+type DataImg = {
+  id: number;
+  name: string;
+  description: string;
+  link: string;
+  page: string;
+  techStack: string;
+}[];
+
+const Text: textData = [
   {
     heading: "Ridho Ray Putra",
     subHeading: "FrontEnd Developer & UI/UX Designer",
     paragraph:
       "Hello everyone 👋 I’m a software engineer Who love and enthusiast about tech, and love for learning",
   },
-  {},
 ];
 
-const DataImg = [
+const DataImg: DataImg = [
   {
     id: 1,
     name: "Aspirasiku",
@@ -42,22 +56,6 @@ const DataImg = [
     link: "/anime",
     page: "https://anim-me.vercel.app/",
     techStack: "HTML & Vanilla Css",
-  },
-  {
-    id: 5,
-    name: "Aspirasiku",
-    description: "",
-    link: "/icon",
-    page: "",
-    techStack: "",
-  },
-  {
-    id: 6,
-    name: "Movieeflixx",
-    description: "",
-    link: "/Movie",
-    page: "",
-    techStack: "",
   },
 ];
 
