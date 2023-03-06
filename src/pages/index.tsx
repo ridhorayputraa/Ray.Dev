@@ -53,9 +53,6 @@ export default function Home() {
   return (
     <>
       <Layout className="text-center">
-        {/* Punya aing
-flex md:flex-row flex-col  mx-auto text-center justify-between content-center
- */}
 
         <Canvas
           ref={canvasRef}
