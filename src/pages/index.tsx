@@ -73,7 +73,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="w-4/6 ml-0  text-center flex justify-center sm:left-16  ">
+            <div className="w-4/6 ml-0 sm:ml-14  text-center flex justify-center sm:left-16  ">
               <Image
                 src="/ray.svg"
                 alt="Picture of the author"
