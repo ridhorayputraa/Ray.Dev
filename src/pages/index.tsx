@@ -12,7 +12,6 @@ import Footer from "@/sections/Footer";
 import Tech from "../sections/Tech";
 import Project from "@/sections/Project";
 
-// import luxy from "luxy.js";
 
 const Canvas = forwardRef((props, ref) => (
   // @ts-ignorepm
@@ -25,17 +24,9 @@ export default function Home() {
   const canvasRef = useRef(null);
   const [height, setHeight] = useState(0);
 
-  //   const init = () => {
-  //   luxy.init()
-  //   luxy.settings.wrapperSpeed = 0.02;
-  // };
-
+  
   const isBrowser = () => typeof window !== "undefined";
-  // useEffect(() => {
-  // if(isBrowser()){
-  //  return init()
-  // }
-  // }, [])
+  
   useEffect(() => {
     setHeight(window.innerWidth);
   }, [height]);

@@ -2,6 +2,7 @@ type textData = {
   heading: string;
   subHeading: string;
   paragraph: string;
+  paragraphAbout: string;
 }[];
 
 type DataImg = {
@@ -19,8 +20,8 @@ const Text: textData = [
     subHeading: "FrontEnd Developer & UI/UX Designer",
     paragraph:
       "Hello everyone 👋 Looking for a skilled front-end developer to solve your problem? Look no further! I have the expertise and knowledge to provide you with the perfect solution.",
-    // paragraph:
-    //   "Hello everyone 👋 I’m a software engineer Who love and enthusiast about tech, and love for learning",
+    paragraphAbout:
+      "Hello everyone 👋 I’m a software engineer Who love and enthusiast about tech, and love for learning",
   },
 ];
 
