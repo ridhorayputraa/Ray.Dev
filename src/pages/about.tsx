@@ -1,6 +1,6 @@
 import Layout from "@/sections/Layout";
 import React from "react";
-import { Text } from "../pages/data/Text";
+import { Text } from "./data/data";
 
 export default function about() {
   return (

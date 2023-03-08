@@ -6,7 +6,7 @@ import { forwardRef, useCallback, useEffect, useRef, useState } from "react";
 import CanvasControl from "@/components/CanvasControl";
 
 // Text
-import { Text } from "@/pages/data/Text";
+import { Text } from "@/pages/data/data";
 import Layout from "@/sections/Layout";
 import Footer from "@/sections/Footer";
 import Tech from "../sections/Tech";
