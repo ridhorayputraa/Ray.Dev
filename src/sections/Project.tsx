@@ -1,7 +1,7 @@
 // Photos from https://citizenofnowhe.re/lines-of-the-city
 import { motion, useScroll, useSpring } from "framer-motion";
 
-import { DataImg } from "@/pages/data/Text";
+import { DataImg } from "@/pages/data/text";
 import Image from "next/image";
 import ImageParallax from "@/components/ImageParallax";
 import ImageMobile from "@/components/ImageMobile";

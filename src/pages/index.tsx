@@ -12,7 +12,6 @@ import Footer from "@/sections/Footer";
 import Tech from "../sections/Tech";
 import Project from "@/sections/Project";
 
-
 const Canvas = forwardRef((props, ref) => (
   // @ts-ignorepm
   <ReactSketchCanvas {...props} ref={ref} />
@@ -24,9 +23,8 @@ export default function Home() {
   const canvasRef = useRef(null);
   const [height, setHeight] = useState(0);
 
-  
   const isBrowser = () => typeof window !== "undefined";
-  
+
   useEffect(() => {
     setHeight(window.innerWidth);
   }, [height]);
@@ -44,7 +42,6 @@ export default function Home() {
   return (
     <>
       <Layout className="text-center">
-
         <Canvas
           ref={canvasRef}
           // @ts-ignore

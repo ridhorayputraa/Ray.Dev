@@ -1,6 +1,5 @@
 import Layout from "@/sections/Layout";
 import React from "react";
-import { Text } from "./data/Text";
 
 export default function contact() {
   return (
