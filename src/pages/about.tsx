@@ -1,6 +1,5 @@
 import Layout from "@/sections/Layout";
 import React from "react";
-import { HiPencilSquare } from "react-icons/hi2";
 import { Text } from "./data/Text";
 
 export default function about() {

@@ -165,7 +165,13 @@ button {
     border-radius: 0.5em;
     background-color: transparent;
     /* @apply border-b-2 ; */
+    border-bottom:  0.1px solid rgba(154, 159, 159, 0.533);
+
+  }
+  
+  .active li{
     border-bottom: 0.1px solid #818cf8;
+
   }
   ul li {
     align-items: bottom;
