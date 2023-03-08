@@ -13,24 +13,26 @@ export default function contact() {
             in touch with me by following my social media bellow:
           </p>
           <div className="div">
-            <ul>
-              <p className="p-3 text-gray-400">
-                Email -{" "}
-                <a className=" text-gray-200 font-bold border-b-2 " href="mailto:ridhorayputra033@gmail.com">
-                 ridhorayputra033@gmail.com
-                </a>
-              </p>
+            <p className="p-3 text-gray-300">
+              Email -{" "}
+              <a
+                className=" text-gray-200 font-bold border-b-2 "
+                href="mailto:ridhorayputra033@gmail.com"
+              >
+                ridhorayputra033@gmail.com
+              </a>
+            </p>
 
-              <p className="p-3 text-gray-400">
-                Github -{" "}
-                <a className=" text-gray-200 font-bold border-b-2 " href="mailto:ridhorayputra033@gmail.com">
-                 ridhorayputra033@gmail.com
-                </a>
-              </p>
-
-              <li> Linkedin : - </li>
-              <li> Instagram : - </li>
-            </ul>
+            <p className="p-3 text-gray-300">
+              Github -{" "}
+              <a
+                target="_blank"
+                className=" text-gray-200 font-bold border-b-2 "
+                href="https://github.com/ridhorayputraa"
+              >
+                ridhorayputraa
+              </a>
+            </p>
           </div>
         </div>
       </Layout>
