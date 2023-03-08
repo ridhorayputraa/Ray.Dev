@@ -2,7 +2,8 @@ import "../styles/globals.css";
 import { ThemeProvider } from "next-themes";
 import Header from "@/sections/Header";
 import { Router } from "next/router";
-import NProgress from "nprogress";
+// import NProgress from "";
+const NProgress = require("nprogress")
 import "@/styles/nprogress.css";
 import { AnimatePresence, domAnimation, LazyMotion, m } from "framer-motion";
 import { variants } from "animations/variants";
