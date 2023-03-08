@@ -50,7 +50,7 @@ export default function Home() {
           style={{
             zIndex: 5,
           }}
-          className="bg-transparent  absolute top-0 left-0 h-screen w-full"
+          className="bg-transparent  absolute top-0 left-0 h-1  w-1/3"
           strokeWidth={5}
           strokeColor={color}
         />
@@ -92,7 +92,7 @@ export default function Home() {
             <HeaderMarquee>RIdho ganetng-ganteng-ganteng</HeaderMarquee>
         </Section> */}
 
-          <section className="Tech Stack mb-5 sm:py-32">
+          <section id="tech" className="Tech Stack mb-5 sm:py-32">
             <p className="mb-32 div font-bold text-3xl mt-6 md:mt-0 md:text-5xl">
               Tech Stack
             </p>
