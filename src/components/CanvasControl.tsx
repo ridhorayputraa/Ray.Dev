@@ -1,4 +1,4 @@
-import { HiCheckCircle, HiTrash } from "react-icons/hi";
+import { HiArrowCircleDown, HiCheckCircle, HiTrash } from "react-icons/hi";
 interface ControlProps {
   clearCanvas: () => void;
   color: string;
@@ -30,6 +30,16 @@ const CanvasControl = ({ clearCanvas, color, setColor }: ControlProps) => {
         })}
 
         <button
+          className="w-8 h-8 rounded-full bg-slate-300 dark:bg-gray-800"
+          aria-label="Clear Canvas"
+        >
+          <a href="#tech">
+            {" "}
+            <HiArrowCircleDown className="mx-auto" />
+          </a>
+        </button>
+
+        <button
           className="w-8 h-8 rounded-full bg-gray-300 dark:bg-black"
           onClick={() => {
             clearCanvas();
@@ -37,16 +47,6 @@ const CanvasControl = ({ clearCanvas, color, setColor }: ControlProps) => {
           aria-label="Clear Canvas"
         >
           <HiTrash className="mx-auto" />
-        </button>
-
-        <button
-          className="w-8 h-8 rounded-full bg-gray-300 dark:bg-black"
-          aria-label="Clear Canvas"
-        >
-          <a href="#tech">
-            {" "}
-            <HiTrash className="mx-auto" />
-          </a>
         </button>
       </div>
     </div>
