@@ -24,7 +24,6 @@ const Text: textData = [
     subHeading: "FrontEnd Developer & UI/UX Designer",
     paragraph:
       "Hello everyone 👋 Looking for a skilled front-end developer to solve your problem? Look no further! I have the expertise and knowledge to provide you with the perfect solution.",
-
     paragraphAbout1:
       "My name is Ridho Ray Putra and I'm a freelance Frontend and UI/UX Designer based in the bustling city of Jakarta. At just 19 years old, I'm already passionate about all things design and am dedicated to helping businesses and individuals achieve their goals through creative and effective design solutions.",
     paragraphAbout2:
