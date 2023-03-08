@@ -18,7 +18,7 @@ type DataImg = {
   techStack: string;
 }[];
 
-const Text: textData = [
+export const Text: textData = [
   {
     heading: "Ridho Ray Putra",
     subHeading: "FrontEnd Developer & UI/UX Designer",
@@ -37,7 +37,7 @@ const Text: textData = [
   },
 ];
 
-const DataImg: DataImg = [
+export const DataImg: DataImg = [
   {
     id: 1,
     name: "Aspirasiku",
@@ -73,5 +73,3 @@ const DataImg: DataImg = [
     techStack: "HTML & Vanilla Css",
   },
 ];
-
-export { Text, DataImg };
