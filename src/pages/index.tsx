@@ -29,7 +29,6 @@ export default function Home() {
   useEffect(() => {
     setHeight(window.innerWidth);
   }, [height]);
-  // const height = window.innerHeight
 
   const clearHandler = () => {
     // @ts-ignore
